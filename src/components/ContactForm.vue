@@ -79,7 +79,7 @@ export default {
       isSubmitting.value = true
 
       try {
-        const response = await axios.post('http://localhost:3000/api/contact', form)
+        const response = await axios.post('https://contact-application-backend.onrender.com/api/contact', form)
         successMessage.value = response.data.message || 'Form submitted successfully!'
         // Reset form
         form.name = ''
